@@ -8,3 +8,6 @@ for folder in folders:
           print(file)
     except FileNotFoundError:
         print("please provide the valid folder name ",folder)      
+        break
+    except PermissionError:
+        print("permission error")
